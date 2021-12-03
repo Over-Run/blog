@@ -8,8 +8,8 @@
 
 ```mermaid
 graph LR
-queryDate[确认日期] -- 已存在 --> edit[编辑] --> 发送PR
-queryDate -- 不存在 --> 创建新文件 --> 按照模板编写文章
+queryDate[确认日期] -- 已存在 --> 编辑 --> createPr["发送PR"]
+queryDate -- 不存在 --> 创建新文件 --> 按照模板编写文章 --> createPr
 ```
 
 以下是文章的模板。请根据自身情况修改。  
