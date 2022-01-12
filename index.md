@@ -1,6 +1,6 @@
 # 文章归档
 
-你可以通过[PR](https://github.com/Over-Run/blog/pulls)来发布文章。  
+你可以通过[PR](https://github.com/Over-Run/blog/pulls)来发布文章。
 
 [返回主页](https://over-run.github.io/)。
 
@@ -8,13 +8,13 @@
 
 ```mermaid
 graph LR
-queryDate[确认日期] -- exist[已存在] --> edit[编辑] --> createPr["发送PR"]
-queryDate -- nonExist[不存在] --> create[创建新文件] --> write[按照模板编写文章] --> createPr
+queryDate[确认日期] --> exist[已存在] --> edit[编辑] --> createPr["发送PR"]
+queryDate --> nonExist[不存在] --> create[创建新文件] --> write[按照模板编写文章] --> createPr
 ```
 
-以下是文章的模板。请根据自身情况修改。  
-**不按照模板编写的文章将被退回。**  
-**注意：日期中月、日统一使用两位数字表示。**  
+以下是文章的模板。请根据自身情况修改。
+**不按照模板编写的文章将被退回。**
+**注意：日期中月、日统一使用两位数字表示。**
 日期格式：年.月.日
 
 ```markdown
@@ -30,9 +30,6 @@ queryDate -- nonExist[不存在] --> create[创建新文件] --> write[按照模
 
 ---
 
-- 2021年  
-  [09.28](2021/09-28/)  
-  [10.11](2021/10-11/)  
-  [12.01](2021/12-01/)
+- 2021年[09.28](2021/09-28/)[10.11](2021/10-11/)[12.01](2021/12-01/)
 - 2022年
   [01.12](2022/01-12/)
